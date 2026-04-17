@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Automation Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="utils.TestListener" />
+    </listeners>
+
+    <!-- Test for Login Scenarios -->
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Test for E2E Checkout Flow -->
+    <test name="Checkout E2E Tests">
+        <classes>
+            <class name="tests.CheckoutE2ETest"/>
+        </classes>
+    </test>
+
+    <!-- Test for Sorting Functionalities -->
+    <test name="Product Sorting Tests">
+        <classes>
+            <class name="tests.ProductSortingTest"/>
+        </classes>
+    </test>
+</suite>

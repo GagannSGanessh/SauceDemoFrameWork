@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Reqres API Master Suite">
+    <listeners>
+        <listener class-name="utils.ApiTestListener" />
+    </listeners>
+
+    <test name="CRUD Operations Test">
+        <classes>
+            <class name="tests.UserTests"/>
+            <class name="tests.ComplexApiTests"/>
+        </classes>
+    </test>
+</suite>

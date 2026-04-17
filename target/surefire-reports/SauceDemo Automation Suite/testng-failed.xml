@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [SauceDemo Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Login Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="captureErrorScreenshotTest"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+  <test thread-count="2" parallel="tests" name="Checkout E2E Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.CheckoutE2ETest">
+        <methods>
+          <include name="e2eCheckoutFlowTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.CheckoutE2ETest -->
+    </classes>
+  </test> <!-- Checkout E2E Tests(failed) -->
+</suite> <!-- Failed suite [SauceDemo Automation Suite] -->
